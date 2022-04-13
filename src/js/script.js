@@ -2,6 +2,7 @@ const body = document.querySelector('.body')
 const firstSlide = document.querySelector('.first-slide')
 const secondSlide = document.querySelector('.second-slide')
 const st1 = document.querySelector('.st1-text')
+const st2 = document.querySelector('.st2')
 const leftBeacon = document.querySelector('#left-beacon')
 
 var counter = 0
@@ -14,10 +15,11 @@ function Slides(){
         firstSlide.classList.add('first-slide-show')
     }  
     
-    if (counter === 2) {
+    if (counter === 1) {
         leftBeacon.classList.add('left-beacon-show')
         st1.classList.add('st1-text-show')
         secondSlide.classList.add('second-slide-show')
+        st2.classList.add('st2-show')
     }
 
 

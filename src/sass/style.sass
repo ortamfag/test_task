@@ -22,6 +22,8 @@
     transition: 10s
     position: relative
 
+.template
+
     & img
 
         &:nth-child(1)
@@ -38,18 +40,20 @@
             position: absolute
             bottom: 20px
             left: 20px
-        
+
         &:nth-child(4)
             position: absolute
             bottom: 20px
             right: 0
             z-index: 2
-        
+
         &:nth-child(5)
             position: absolute
             bottom: 45px
             right: 115px
             z-index: 1
+
+
 
 .first-slide p:nth-child(1)
     position: absolute
@@ -106,6 +110,7 @@
 .left-beacon-show
     opacity: 1 !important
     transition: 1s
+    transition-delay: 2s
 
 .st1-text
     position: absolute
@@ -134,4 +139,38 @@
     &-show
         opacity: 1
         transition: 1s
+        transition-delay: 2s
+
+.st2
+    opacity: 0
+
+    & img:nth-child(1)
+        width: 340px
+        height: 220px
+        position: absolute
+        bottom: 50px
+        right: 115px
+
+    & img:nth-child(2)
+        position: absolute
+        bottom: 235px
+        right: 265px
+        width: 50px
+
+    & p:nth-child(3)
+        position: absolute
+        font-family: "Din Condensed"
+        font-size: 17pt
+        text-align: center
+        color: #005da8
+        bottom: 185px
+        right: 190px
+        width: 200px
+
+.st2-show
+    opacity: 1
+    transition: 1s
+    transition-delay: 3s
+
+        
             
