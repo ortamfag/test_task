@@ -7,6 +7,8 @@ const st3 = document.querySelector('.st3')
 const st4 = document.querySelector('.st4')
 const st5 = document.querySelector('.st5')
 const st6 = document.querySelector('.st6')
+const sunGlow = document.querySelector('#sunGlow')
+const clouds = document.querySelector('#clouds')
 const leftBeacon = document.querySelector('#left-beacon')
 
 var counter = 0
@@ -17,6 +19,8 @@ function Slides(){
 
     if (counter === 1) {
         firstSlide.classList.add('first-slide-show')
+        sunGlow.classList.add('sunGlow-active')
+        clouds.classList.add('clouds-active')
     }  
     
     if (counter === 1) {

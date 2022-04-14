@@ -53,6 +53,73 @@
             right: 115px
             z-index: 1
 
+        &:nth-child(6)
+            position: absolute
+            top: 0
+            left: 140px
+            width: 265px
+        
+        &:nth-child(7)
+            position: absolute
+            top: 0
+            left: 0
+
+
+.sunGlow-active
+    animation: glow 5s infinite
+
+@keyframes glow
+    0%
+        transform: scale(1)
+
+    50%
+        transform: scale(1.1)
+
+    100%
+        transform: scale(1)
+
+.clouds
+    position: relative
+    transform: translateX(-70%)
+
+    & img:nth-child(1)
+        position: absolute
+        top: 220px
+        left: -350px
+        width: 600px
+
+    & img:nth-child(2)
+        position: absolute
+        top: 160px
+        left: 155px
+
+    & img:nth-child(3)
+        position: absolute
+        top: 100px
+        left: -245px
+
+    & img:nth-child(4)
+        position: absolute
+        top: 265px
+        left: 0
+
+    & img:nth-child(5)
+        position: absolute
+        top: 130px
+        left: 60px
+        
+    &-active
+        animation: 50s clouds
+        
+@keyframes clouds
+    0%
+        transform: translateX(-70%)
+
+    100%
+        transform: translateX(135%)
+
+
+
 
 
 .first-slide p:nth-child(1)
