@@ -22,6 +22,11 @@
     transition: 10s
     position: relative
 
+.wrapper-night
+    transition: 3s
+    background: url('../img/BGnight.png') no-repeat
+    transition-delay: 11s
+
 .template
 
     & img
@@ -49,24 +54,18 @@
 
         &:nth-child(5)
             position: absolute
-            bottom: 45px
-            right: 115px
-            z-index: 1
-
-        &:nth-child(6)
-            position: absolute
             top: 0
             left: 140px
             width: 265px
-        
-        &:nth-child(7)
-            position: absolute
-            top: 0
-            left: 0
 
 
 .sunGlow-active
     animation: glow 5s infinite
+
+.sunGlow-disactive
+    opacity: 0
+    transition: 3s
+    transition-delay: 11s
 
 @keyframes glow
     0%
@@ -213,19 +212,12 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 340px
-        height: 180px
-        position: absolute
-        bottom: 50px
-        right: 115px
-
-    & img:nth-child(2)
         position: absolute
         bottom: 179px
         right: 265px
         width: 50px
 
-    & p:nth-child(3)
+    & p:nth-child(2)
         position: absolute
         font-family: "Din Condensed"
         font-size: 18px
@@ -241,20 +233,14 @@
 
 .st3
     opacity: 0
-    & img:nth-child(1)
-        width: 340px
-        height: 270px
-        position: absolute
-        bottom: 50px
-        right: 115px
 
-    & img:nth-child(2)
+    & img:nth-child(1)
         width: 50px
         position: absolute
         bottom: 285px
         right: 265px
         
-    & p:nth-child(3)
+    & p:nth-child(2)
         position: absolute
         font-family: "Din Condensed"
         font-size: 18px
@@ -263,7 +249,7 @@
         bottom: 265px
         right: 190px    
 
-    & p:nth-child(4)
+    & p:nth-child(3)
         position: absolute
         font-family: "Arial"
         font-size: 15px
@@ -283,19 +269,12 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 340px
-        height: 365px
-        position: absolute
-        bottom: 50px
-        right: 115px
-
-    & img:nth-child(2)
         width: 50px
         position: absolute
         bottom: 392px
         right: 265px
 
-    & p:nth-child(3)
+    & p:nth-child(2)
         position: absolute
         bottom: 334px
         right: 190px
@@ -318,19 +297,12 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 340px
-        height: 442px
-        position: absolute
-        bottom: 50px
-        right: 115px
-
-    & img:nth-child(2)
         width: 50px
         position: absolute
         bottom: 473px
         right: 265px
 
-    & p:nth-child(3)
+    & p:nth-child(2)
         position: absolute
         bottom: 455px
         right: 190px
@@ -340,7 +312,7 @@
         width: 200px
         text-align: center
 
-    & p:nth-child(4)
+    & p:nth-child(3)
         position: absolute
         bottom: 441px
         right: 190px
@@ -359,19 +331,12 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 340px
-        height: 715px
-        position: absolute
-        bottom: 50px
-        right: 115px
-
-    & img:nth-child(2)
         width: 50px
         position: absolute
         bottom: 571px
         right: 265px
 
-    & p:nth-child(3)
+    & p:nth-child(2)
         position: absolute
         bottom: 521px
         right: 194px
@@ -392,5 +357,94 @@
     transition-delay: 7s
 
         
-        
+.night__stage 
+    opacity: 0
+    
+    & img
+        position: absolute
+        bottom: 45px
+        right: -9px
+        width: 1155px
+        height: 721px
+
+    &-show
+        opacity: 1
+        transition: 5s
+        transition-delay: 10s
+
+.stage
+
+    & img:nth-child(1)
+        width: 340px
+        height: 715px
+        position: absolute
+        bottom: 50px
+        right: 115px
+        opacity: 0
+
+    & img:nth-child(2)
+        width: 340px
+        height: 442px
+        position: absolute
+        bottom: 50px
+        right: 115px
+        opacity: 0
+
+    & img:nth-child(3)
+        width: 340px
+        height: 365px
+        position: absolute
+        bottom: 50px
+        right: 115px
+        opacity: 0
+
+    & img:nth-child(4)
+        width: 340px
+        height: 270px
+        position: absolute
+        bottom: 50px
+        right: 115px
+        opacity: 0
+
+    & img:nth-child(5)
+        width: 340px
+        height: 180px
+        position: absolute
+        bottom: 50px
+        right: 115px
+        opacity: 0
+
+    & img:nth-child(6)
+        width: 340px
+        height: 115px
+        position: absolute
+        bottom: 45px
+        right: 115px
+
+    &-show
+
+        & img:nth-child(1)
+            opacity: 1
+            transition: 1s
+            transition-delay: 7s
+
+        & img:nth-child(2)
+            opacity: 1
+            transition: 1s
+            transition-delay: 6s
+
+        & img:nth-child(3)
+            opacity: 1
+            transition: 1s
+            transition-delay: 5s
+
+        & img:nth-child(4)
+            opacity: 1
+            transition: 1s
+            transition-delay: 4s
+
+        & img:nth-child(5)
+            opacity: 1
+            transition: 1s
+            transition-delay: 3s
             

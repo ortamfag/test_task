@@ -1,4 +1,5 @@
 const body = document.querySelector('.body')
+const wrapper = document.querySelector('.wrapper')
 const firstSlide = document.querySelector('.first-slide')
 const secondSlide = document.querySelector('.second-slide')
 const st1 = document.querySelector('.st1-text')
@@ -7,6 +8,8 @@ const st3 = document.querySelector('.st3')
 const st4 = document.querySelector('.st4')
 const st5 = document.querySelector('.st5')
 const st6 = document.querySelector('.st6')
+const stage = document.querySelector('.stage')
+const nightStage = document.querySelector('.night__stage')
 const sunGlow = document.querySelector('#sunGlow')
 const clouds = document.querySelector('#clouds')
 const leftBeacon = document.querySelector('#left-beacon')
@@ -32,6 +35,10 @@ function Slides(){
         st4.classList.add('st4-show')
         st5.classList.add('st5-show')
         st6.classList.add('st6-show')
+        stage.classList.add('stage-show')
+        nightStage.classList.add('night__stage-show')
+        wrapper.classList.add('wrapper-night')
+        sunGlow.classList.add('sunGlow-disactive')
     }
 
 
@@ -45,6 +52,8 @@ function Slides(){
         st4.classList.remove('st4-show')
         st5.classList.remove('st5-show')
         st6.classList.remove('st6-show')
+        stage.classList.remove('stage-show')
+        nightStage.classList.remove('night__stage-show')
     }  
 
     if (counter === 5) {
