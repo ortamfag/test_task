@@ -11,6 +11,8 @@ const st6 = document.querySelector('.st6')
 const stage = document.querySelector('.stage')
 const nightStage = document.querySelector('.night__stage')
 const sunGlow = document.querySelector('#sunGlow')
+const stars = document.querySelector('#stars')
+const beaconGlow = document.querySelector('#beaconGlow')
 const clouds = document.querySelector('#clouds')
 const leftBeacon = document.querySelector('#left-beacon')
 
@@ -36,9 +38,11 @@ function Slides(){
         st5.classList.add('st5-show')
         st6.classList.add('st6-show')
         stage.classList.add('stage-show')
+        stars.classList.add('stars-active')
         nightStage.classList.add('night__stage-show')
         wrapper.classList.add('wrapper-night')
         sunGlow.classList.add('sunGlow-disactive')
+        beaconGlow.classList.add('beaconGlow-active')
     }
 
 
@@ -53,6 +57,7 @@ function Slides(){
         st5.classList.remove('st5-show')
         st6.classList.remove('st6-show')
         stage.classList.remove('stage-show')
+        stars.classList.remove('stars-active')
         nightStage.classList.remove('night__stage-show')
     }  
 
