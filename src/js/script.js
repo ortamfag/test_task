@@ -16,6 +16,8 @@ const beaconGlow = document.querySelector('#beaconGlow')
 const clouds = document.querySelector('#clouds')
 const leftBeacon = document.querySelector('#left-beacon')
 
+const home = document.querySelector('#home')
+
 var counter = 0
 
 function Slides(){
@@ -64,4 +66,6 @@ function Slides(){
     if (counter === 5) {
         counter = 0
     }
+
+    home.addEventListener('click', () => counter = 4)
 }
