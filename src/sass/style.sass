@@ -3,6 +3,9 @@
     margin: 0
     box-sizing: border-box
 
+.body
+    overflow-x: hidden
+
 @font-face
     font-family: "Arial"
     src: url(../fonts/arial.ttf) format("truetype")
@@ -74,8 +77,20 @@
 
 .stars-active
     opacity: 1 !important
+    animation: stars 5s infinite
     transition: 3s
     transition-delay: 10s
+
+
+@keyframes stars 
+    0%
+        transform: scale(1)
+
+    50%
+        transform: scale(1.01)
+
+    100%
+        transform: scale(1)
 
 .beaconGlow-active
     opacity: 1 !important
@@ -223,7 +238,7 @@
         position: static
         display: block
         margin: 0 auto
-        width: 110px
+        width: 116px
         
     & p:nth-child(2)   
         font-family: "Din Condensed"
@@ -247,9 +262,9 @@
 
     & img:nth-child(1)
         position: absolute
-        bottom: 179px
+        bottom: 175px
         right: 265px
-        width: 50px
+        width: 53px
 
     & p:nth-child(2)
         position: absolute
@@ -257,7 +272,7 @@
         font-size: 18px
         text-align: center
         color: #005da8
-        bottom: 160px
+        bottom: 158px
         right: 175px
 
 .st2-show
@@ -269,9 +284,9 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 50px
+        width: 53px
         position: absolute
-        bottom: 285px
+        bottom: 276px
         right: 265px
         
     & p:nth-child(2)
@@ -280,7 +295,7 @@
         font-size: 18px
         text-align: center
         color: #005da8
-        bottom: 265px
+        bottom: 260px
         right: 190px    
 
     & p:nth-child(3)
@@ -289,7 +304,7 @@
         font-size: 15px
         text-align: center
         color: #005da8
-        bottom: 230px
+        bottom: 227px
         right: 190px
         width: 200px
         
@@ -303,14 +318,14 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 50px
+        width: 53px
         position: absolute
-        bottom: 392px
+        bottom: 383px
         right: 265px
 
     & p:nth-child(2)
         position: absolute
-        bottom: 334px
+        bottom: 329px
         right: 190px
         color: #005da8
         font-family: "Arial"
@@ -331,14 +346,14 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 50px
+        width: 53px
         position: absolute
-        bottom: 473px
+        bottom: 468px
         right: 265px
 
     & p:nth-child(2)
         position: absolute
-        bottom: 455px
+        bottom: 451px
         right: 190px
         color: #005da8
         font-family: "Din Condensed"
@@ -348,7 +363,7 @@
 
     & p:nth-child(3)
         position: absolute
-        bottom: 441px
+        bottom: 437px
         right: 190px
         color: #005da8
         font-family: "Arial"
@@ -365,14 +380,14 @@
     opacity: 0
 
     & img:nth-child(1)
-        width: 50px
+        width: 53px
         position: absolute
-        bottom: 571px
+        bottom: 574px
         right: 265px
 
     & p:nth-child(2)
         position: absolute
-        bottom: 521px
+        bottom: 523px
         right: 194px
         color: #005da8
         font-family: "Arial"
@@ -397,7 +412,7 @@
     & img
         position: absolute
         bottom: 45px
-        right: -9px
+        right: 0px
         width: 1155px
         height: 721px
 
@@ -456,6 +471,10 @@
         right: 115px
 
     &-show
+
+        opacity: 0
+        transition: 5s
+        transition-delay: 10s
 
         & img:nth-child(1)
             opacity: 1
