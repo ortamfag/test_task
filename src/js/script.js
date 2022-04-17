@@ -1,7 +1,9 @@
 const body = document.querySelector('.body')
 const wrapper = document.querySelector('.wrapper')
+
 const firstSlide = document.querySelector('.first-slide')
 const secondSlide = document.querySelector('.second-slide')
+
 const st1 = document.querySelector('.st1-text')
 const st2 = document.querySelector('.st2')
 const st3 = document.querySelector('.st3')
@@ -10,6 +12,7 @@ const st5 = document.querySelector('.st5')
 const st6 = document.querySelector('.st6')
 const stage = document.querySelector('.stage')
 const nightStage = document.querySelector('.night__stage')
+
 const sunGlow = document.querySelector('#sunGlow')
 const stars = document.querySelector('#stars')
 const beaconGlow = document.querySelector('#beaconGlow')
@@ -17,20 +20,21 @@ const clouds = document.querySelector('#clouds')
 const leftBeacon = document.querySelector('#left-beacon')
 
 const home = document.querySelector('#home')
+const bookmark = document.querySelector('#bookmark')
+const popup = document.querySelector('.bookmark__popup')
+const activePopup = document.querySelector('.bookmark__popup')
 
 var counter = 0
 
-function Slides(){
+function Slides() {
     ++counter
     console.log(counter)
+
 
     if (counter === 1) {
         firstSlide.classList.add('first-slide-show')
         sunGlow.classList.add('sunGlow-active')
         clouds.classList.add('clouds-active')
-    }  
-    
-    if (counter === 1) {
         leftBeacon.classList.add('left-beacon-show')
         st1.classList.add('st1-text-show')
         secondSlide.classList.add('second-slide-show')
@@ -48,7 +52,7 @@ function Slides(){
     }
 
 
-    if (counter === 5) {
+    if (counter === 2) {
         firstSlide.classList.remove('first-slide-show')
         leftBeacon.classList.remove('left-beacon-show')
         st1.classList.remove('st1-text-show')
@@ -61,11 +65,20 @@ function Slides(){
         stage.classList.remove('stage-show')
         stars.classList.remove('stars-active')
         nightStage.classList.remove('night__stage-show')
-    }  
+        beaconGlow.classList.remove('beaconGlow-active')
+        clouds.classList.remove('clouds-active')
+        sunGlow.classList.remove('sunGlow-active')
+        wrapper.classList.remove('wrapper-night')
+    }
 
-    if (counter === 5) {
+    if (counter === 2) {
         counter = 0
     }
 
-    home.addEventListener('click', () => counter = 4)
+    home.addEventListener('click', () => counter = 1)
 }
+
+bookmark.addEventListener('click', () => popup.classList.toggle('bookmark__popup-active'))
+bookmark.addEventListener('click', () => counter = 1)
+activePopup.addEventListener('click', () => popup.classList.remove('bookmark__popup-active'))
+activePopup.addEventListener('click', () => counter = 1)

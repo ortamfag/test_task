@@ -1,0 +1,32 @@
+.bookmark__popup
+    background: url(../img/grey.png) no-repeat
+    width: 100%
+    height: 100%
+    z-index: 2
+    position: absolute
+    display: none
+
+.bookmark__popup-active
+    display: block
+    cursor: pointer
+
+.popup-content
+    border-radius: 10px
+    background-color: #FFFFFF
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+    position: absolute
+    bottom: 0
+    text-align: left
+    margin: 0 auto
+    opacity: 0.8
+    right: 200px
+    width: 70%
+
+    & ul
+        padding: 20px
+
+#bookmark
+    z-index: 5
